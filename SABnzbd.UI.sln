@@ -19,6 +19,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Shared", "Shared", "{647D56
 		SharedAssemblyInfo.cs = SharedAssemblyInfo.cs
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UI", "UI\UI.csproj", "{2D060B15-9161-4B6C-B4B3-AE822FA60322}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{F54192F0-F802-4123-8156-C3932EFD9493}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F54192F0-F802-4123-8156-C3932EFD9493}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F54192F0-F802-4123-8156-C3932EFD9493}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D060B15-9161-4B6C-B4B3-AE822FA60322}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D060B15-9161-4B6C-B4B3-AE822FA60322}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D060B15-9161-4B6C-B4B3-AE822FA60322}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D060B15-9161-4B6C-B4B3-AE822FA60322}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
