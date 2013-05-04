@@ -8,7 +8,7 @@
 	<Window.DataContext>
 		<ViewModels:MainWindowViewModel />
 	</Window.DataContext>
-	<Grid>
-		<ListBox ItemsSource="{Binding Path=Queue,IsAsync=True}" />
+	<Grid DataContext="{Binding Path=Queue,IsAsync=True}">
+		<ListBox ItemsSource="{Binding Path=Slots}" />
 	</Grid>
 </Window>

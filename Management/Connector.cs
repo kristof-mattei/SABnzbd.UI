@@ -1,8 +1,11 @@
 ﻿namespace Management
 {
 	using System;
+	using System.IO;
 	using System.Net;
+	using System.Text;
 	using System.Threading.Tasks;
+	using System.Xml.Serialization;
 	using Model;
 
 	internal class Connector : IDisposable
@@ -26,7 +29,10 @@
 
 		private Queue ConvertApiResultToQueue(string apiResult)
 		{
-			return new Queue();
+
+			XmlSerializer xmlSerializer = new XmlSerializer(typeof (Queue));
+
+			return (Queue)xmlSerializer.Deserialize(new StringReader(apiResult));
 		}
 	}
 }
