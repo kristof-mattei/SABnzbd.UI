@@ -50,6 +50,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="GetQueueMock.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -57,6 +58,10 @@
     <ProjectReference Include="..\Management\Management.csproj">
       <Project>{A5D6F6A3-7B60-43D1-9C5A-BA33E9B471F2}</Project>
       <Name>Management</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{f54192f0-f802-4123-8156-c3932efd9493}</Project>
+      <Name>Model</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>
