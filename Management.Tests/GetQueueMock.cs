@@ -1,13 +1,16 @@
 ﻿namespace Management.Tests
 {
-	using System.Threading.Tasks;
 	using Model;
 
 	internal class GetQueueMock : IGetQueue
 	{
-		public Task<Queue> GetQueue(Queue queue)
+		/// <summary>
+		///     Pass in a Queue object to update that object to the latest values
+		/// </summary>
+		/// <param name="queue">A current constructed queue</param>
+		/// <returns>An new or updated queue</returns>
+		public void UpdateQueue(Queue queue)
 		{
-			return null;
 		}
 	}
 }

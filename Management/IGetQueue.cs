@@ -8,10 +8,9 @@
 
 		/// <summary>
 		///     Pass in a Queue object to update that object to the latest values
-		///		or null to get a new queue
 		/// </summary>
-		/// <param name="queue">A current constructed queue or null</param>
+		/// <param name="queue">A current constructed queue</param>
 		/// <returns>An new or updated queue</returns>
-		Task<Queue> GetQueue(Queue queue);
+		void UpdateQueue(Queue queue);
 	}
 }
