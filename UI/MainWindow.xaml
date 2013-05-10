@@ -5,8 +5,16 @@
         Title="MainWindow"
         Height="350"
         Width="525">
+	<Window.Resources>
+		<ViewModels:ViewModelLocator x:Key="ViewModelLocator" />
+	</Window.Resources>
 	<Window.DataContext>
-		<ViewModels:MainWindowViewModel />
+		<Binding>
+			<Binding.Path >ViewModels[MainWindowViewModel]</Binding.Path>
+			<Binding.Source>
+				<StaticResource ResourceKey="ViewModelLocator" />
+			</Binding.Source>
+		</Binding>
 	</Window.DataContext>
 	<Grid DataContext="{Binding Path=Queue,IsAsync=True}">
 		<ListBox ItemsSource="{Binding Path=Slots}" />

@@ -6,7 +6,7 @@
 	[XmlRoot("queue")]
 	public class Queue
 	{
-		#region "These are for the serializer, don't use them directly, they're not useful"
+		#region These are for the serializer, don't use them directly, they're not useful
 
 		[XmlElement("paused")]
 		[DebuggerBrowsable(DebuggerBrowsableState.Never)]
@@ -15,12 +15,15 @@
 
 		#endregion
 
+		#region Direct API translations
+
 		/// <summary>
-		/// TODO check type on this one and whether we need a custom backing field
-		/// Represents the current speed
+		///     Represents the current speed
 		/// </summary>
-		[XmlElement("speed")]
-		public decimal Speed { get; set; }
+		[XmlElement("kbpersec")]
+		public decimal KbPerSecond { get; set; }
+
+		#endregion
 
 		/// <summary>
 		///     Paused or not, uses the <see cref="ApiPaused" />
@@ -33,8 +36,12 @@
 			}
 		}
 
+		#region Children
+
 		[XmlArray("slots")]
 		[XmlArrayItem(typeof (Slot), ElementName = "slot")]
 		public Slot[] Slots { get; set; }
+
+		#endregion
 	}
 }
