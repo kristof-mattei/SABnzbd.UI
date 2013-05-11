@@ -2,7 +2,7 @@
 {
 	using Model;
 
-	public class QueueManagement : IGetQueue
+	public class QueueManagement : IQueueManagement
 	{
 		public async void UpdateQueue(Queue queue)
 		{

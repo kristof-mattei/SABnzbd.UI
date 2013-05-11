@@ -40,8 +40,9 @@
       <Link>Properties\SharedAssemblyInfo.cs</Link>
     </Compile>
     <Compile Include="Connector.cs" />
+    <Compile Include="Mocks\QueueManagementMock.cs" />
     <Compile Include="QueueManagement.cs" />
-    <Compile Include="IGetQueue.cs" />
+    <Compile Include="IQueueManagement.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

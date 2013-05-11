@@ -3,7 +3,7 @@
 	using System.Threading.Tasks;
 	using Model;
 
-	public interface IGetQueue
+	public interface IQueueManagement
 	{
 
 		/// <summary>

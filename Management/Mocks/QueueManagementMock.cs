@@ -1,8 +1,8 @@
-﻿namespace Management.Tests
+﻿namespace Management.Mocks
 {
 	using Model;
 
-	internal class GetQueueMock : IGetQueue
+	public class QueueManagementMock : IQueueManagement
 	{
 		/// <summary>
 		///     Pass in a Queue object to update that object to the latest values
@@ -11,6 +11,8 @@
 		/// <returns>An new or updated queue</returns>
 		public void UpdateQueue(Queue queue)
 		{
+			queue.ApiPaused = "True";
+			queue.KbPerSecond = 555.55m;
 		}
 	}
 }
