@@ -6,9 +6,6 @@
         Height="350"
 		DataContext="{Binding Path=MainWindowViewModel, Source={StaticResource ViewModelLocator}}"
         Width="525">
-	<Window.Resources>
-		<ViewModels:ViewModelLocator x:Key="ViewModelLocator" />
-	</Window.Resources>
 	<Grid DataContext="{Binding Path=Queue,IsAsync=True}">
 		<ListBox ItemsSource="{Binding Path=Slots}">
 			
