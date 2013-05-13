@@ -3,7 +3,6 @@
 	using System;
 	using System.IO;
 	using System.Net;
-	using System.Text;
 	using System.Threading.Tasks;
 	using System.Xml.Serialization;
 	using Model;
@@ -15,24 +14,24 @@
 			// cleanup on isle 4
 		}
 
+		~Connector()
+		{
+			// cleanup	
+		}
+
 		public async Task<Queue> DownloadQueue()
 		{
-			string result;
-
 			using (WebClient w = new WebClient())
 			{
-				result = await w.DownloadStringTaskAsync("http://localhost:8080/sabnzbd/api?mode=queue&output=xml");
+				return this.ConvertApiResultToQueue(await w.DownloadStringTaskAsync("http://localhost:8080/sabnzbd/api?mode=queue&output=xml"));
 			}
-
-			return this.ConvertApiResultToQueue(result);
 		}
 
 		private Queue ConvertApiResultToQueue(string apiResult)
 		{
-
 			XmlSerializer xmlSerializer = new XmlSerializer(typeof (Queue));
 
-			return (Queue)xmlSerializer.Deserialize(new StringReader(apiResult));
+			return (Queue) xmlSerializer.Deserialize(new StringReader(apiResult));
 		}
 	}
 }
