@@ -4,11 +4,9 @@
         xmlns:ViewModels="clr-namespace:UI.ViewModels"
         Title="MainWindow"
         Height="350"
-		DataContext="{Binding Path=MainWindowViewModel, Source={StaticResource ViewModelLocator}}"
+		DataContext="{Binding Path=MainWindowViewModel.Queue, Source={StaticResource ViewModelLocator}}"
         Width="525">
-	<Grid DataContext="{Binding Path=Queue,IsAsync=True}">
-		<ListBox ItemsSource="{Binding Path=Slots}">
-			
-			</ListBox>
+	<Grid>
+		<ListBox ItemsSource="{Binding Path=Slots}" BorderThickness="1" BorderBrush="#FF0034D1"/>
 	</Grid>
 </Window>
