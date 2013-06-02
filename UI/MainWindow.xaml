@@ -38,19 +38,19 @@
 				</DataTemplate>
 			</ListBox.Resources>
 		</ListBox>
-		<StatusBar Grid.Row="1">
-			<Grid>
-				<Grid.ColumnDefinitions>
-					<ColumnDefinition Width="*"/> 
-					<ColumnDefinition Width="23"/> 
-				</Grid.ColumnDefinitions>
-				<StackPanel Orientation="Horizontal" Grid.Column="0">
-					<TextBlock>
-						<Run Text="Speed: " /><Run Text=" " /><Run Text="{Binding KbPerSecond}" /><Run Text=" " /><Run Text="KB / Sec" />
-					</TextBlock>
-				</StackPanel>
-				<Controls:IsDownloading IsPaused="{Binding Paused}" Grid.Column="1" />
-			</Grid>
+		<StatusBar Grid.Row="1"
+		           HorizontalContentAlignment="Stretch">
+
+			<StatusBarItem HorizontalAlignment="Left">
+				<TextBlock>
+					<Run Text="Speed: " /><Run Text=" " /><Run Text="{Binding KbPerSecond}" /><Run Text=" " /><Run Text="KB / Sec" />
+				</TextBlock>
+			</StatusBarItem>
+			<StatusBarItem HorizontalAlignment="Right">
+				<Controls:IsDownloading IsPaused="{Binding Paused}"
+				                        Height="17"
+				                        Width="40" />
+			</StatusBarItem>
 		</StatusBar>
 	</Grid>
 </Window>

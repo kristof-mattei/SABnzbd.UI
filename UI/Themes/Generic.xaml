@@ -10,7 +10,7 @@
 					<Border Background="{TemplateBinding Background}"
 					        BorderBrush="{TemplateBinding BorderBrush}"
 					        BorderThickness="{TemplateBinding BorderThickness}">
-						<ToggleButton x:Name="PART_ToggleButton"></ToggleButton>
+						<ToggleButton x:Name="PART_ToggleButton" Margin="0"></ToggleButton>
 					</Border>
 				</ControlTemplate>
 			</Setter.Value>
