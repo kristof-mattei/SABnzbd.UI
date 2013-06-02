@@ -1,8 +1,4 @@
-<Model:Queue xmlns:Model="clr-namespace:Model;assembly=Model"
+﻿<Model:Queue xmlns:Model="clr-namespace:Model;assembly=Model"
              Paused="True"
              KbPerSecond="500">
-
-	<Model:Queue.Slots>
-
-	</Model:Queue.Slots>
 </Model:Queue>
