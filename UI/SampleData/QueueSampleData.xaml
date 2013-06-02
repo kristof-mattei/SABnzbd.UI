@@ -1,4 +1,14 @@
 ﻿<Model:Queue xmlns:Model="clr-namespace:Model;assembly=Model"
-             Paused="True"
-             KbPerSecond="500">
+             KbPerSecond="400"
+			 Paused="False">
+	<Model:Queue.Slots>
+		<Model:Slot>
+			<Model:Slot.Index>1</Model:Slot.Index>
+			<Model:Slot.Status>Paused</Model:Slot.Status>
+		</Model:Slot>
+		<Model:Slot>
+			<Model:Slot.Status>Downloading</Model:Slot.Status>
+			<Model:Slot.Index>2</Model:Slot.Index>
+		</Model:Slot>
+	</Model:Queue.Slots>
 </Model:Queue>
