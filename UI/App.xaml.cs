@@ -1,16 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Threading.Tasks;
-using System.Windows;
-
-namespace UI
+﻿namespace UI
 {
+	using System;
+	using System.Windows;
+
 	/// <summary>
-	/// Interaction logic for App.xaml
+	///     Interaction logic for App.xaml
 	/// </summary>
 	public partial class App : Application
 	{
+		[STAThread]
+		public static void Main()
+		{
+			App app = new App();
+			app.InitializeComponent();
+			app.Run();
+		}
 	}
 }
 
