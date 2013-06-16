@@ -2,8 +2,7 @@
 {
 	public class ViewModelLocator
 	{
-		public ViewModelLocator
-			()
+		public ViewModelLocator()
 		{
 			this.MainWindowViewModel = new MainWindowViewModel();
 			// ...

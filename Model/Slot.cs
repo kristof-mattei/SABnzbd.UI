@@ -11,5 +11,8 @@
 
 		[XmlElement("index", Type = typeof(int))]
 		public int Index { get; set; }
+
+		[XmlElement("filename", Type = typeof(string))]
+		public string FileName { get; set; }
 	}
 }
