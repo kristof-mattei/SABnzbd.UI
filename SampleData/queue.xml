@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<queue><uniconfig>C:\Program Files (x86)\SABnzbd\interfaces\Config\templates</uniconfig>
+<cache_size>0 B</cache_size>
+<active_lang>en</active_lang>
+<paused>True</paused>
+<session>14c56d9f14b658380c5d6e91edf1330b</session>
+<restart_req>False</restart_req>
+<power_options>True</power_options>
+<slots><slot><status>Queued</status>
+<index>0</index>
+<eta>unknown</eta>
+<missing>0</missing>
+<avg_age>1d</avg_age>
+<script>None</script>
+<msgid></msgid>
+<verbosity></verbosity>
+<mb>115.42</mb>
+<sizeleft>115 MB</sizeleft>
+<filename>Some shady file Retail par2</filename>
+<priority>Normal</priority>
+<cat>*</cat>
+<mbleft>115.42</mbleft>
+<timeleft>0:00:00</timeleft>
+<percentage>0</percentage>
+<nzo_id>SABnzbd_nzo_-6jjx8</nzo_id>
+<unpackopts>3</unpackopts>
+<size>115 MB</size>
+</slot>
+</slots>
+<speed>0  </speed>
+<helpuri>http://wiki.sabnzbd.org/</helpuri>
+<size>115 MB</size>
+<uptime>17h</uptime>
+<refresh_rate></refresh_rate>
+<my_home>D:\Personal\Documents</my_home>
+<limit>0</limit>
+<have_quota>False</have_quota>
+<isverbose>False</isverbose>
+<start>0</start>
+<finish>0</finish>
+<version>0.7.11</version>
+<new_rel_url></new_rel_url>
+<my_lcldata>C:\Users\Kristof\AppData\Local\sabnzbd</my_lcldata>
+<color_scheme>gold</color_scheme>
+<diskspacetotal1>376.42</diskspacetotal1>
+<nt>True</nt>
+<status>Paused</status>
+<last_warning></last_warning>
+<have_warnings>0</have_warnings>
+<cache_art>0</cache_art>
+<sizeleft>115 MB</sizeleft>
+<finishaction>None</finishaction>
+<paused_all>False</paused_all>
+<quota>0 </quota>
+<newzbin_url>www.newzbin2.es</newzbin_url>
+<new_release></new_release>
+<pause_int>0</pause_int>
+<mbleft>115.42</mbleft>
+<diskspace1>263.36</diskspace1>
+<scripts></scripts>
+<categories><category>*</category>
+</categories>
+<darwin>False</darwin>
+<timeleft>0:00:00</timeleft>
+<mb>115.42</mb>
+<noofslots>1</noofslots>
+<eta>unknown</eta>
+<diskspacetotal2>376.42</diskspacetotal2>
+<nzb_quota></nzb_quota>
+<loadavg></loadavg>
+<cache_max>209715200</cache_max>
+<kbpersec>0.00</kbpersec>
+<speedlimit></speedlimit>
+<webdir></webdir>
+<queue_details>0</queue_details>
+<left_quota>0 </left_quota>
+<diskspace2>263.36</diskspace2>
+</queue>
